@@ -1,0 +1,278 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.containerSection {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  max-height: 400px;
+  flex: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hoverStyle {
+  height: 100;
+  width: 60%;
+  display: flex;
+  flex: 1;
+  background-color: #ffa50022;
+  overflow: hidden;
+}
+
+.singleItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  margin: 0.5px;
+  background-color: #ffa500;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.otherSection {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 50vh;
+}
+
+.hLine {
+  margin: 12px 30px;
+  height: 0.5px;
+  background-color: #888;
+}
+
+.rootFlexAttributes {
+  flex: 1;
+  padding: 10px 0px;
+  height: fit-content;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.heading {
+  margin: 10px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pageHeading {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #333;
+}
+
+.pageSubHeading,
+.link {
+  color: #333;
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.pageDescription {
+  font-size: 12px;
+  color: #333;
+  padding: 4px 0px;
+}
+
+.githublink {
+  padding: 8px 0px;
+  cursor: pointer;
+}
+
+.link {
+  color: #ffa500;
+  background-color: #ffa50022;
+  margin: 0px -4px;
+  padding: 0px 4px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.attributesContainer {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.eachAttributeColumn {
+  min-width: 150px;
+  padding: 10px;
+}
+
+.itemOperationsContainer {
+  width: 150px;
+  padding: 10px;
+  margin: 0px 20px;
+}
+
+.attribute {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 10px;
+  color: #333;
+}
+
+.value,
+.itemOperations {
+  font-size: 14px;
+  color: #ffa500;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.itemOperations {
+  -webkit-tap-highlight-color: #ffa50022;
+  -webkit-tap-highlight-color: #ffa50022;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rootFlexCode {
+  padding: 40px 20px;
+  min-width: 300px;
+  min-height: 200px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.copyIcon {
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  color: #fff7;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.copyIcon .tooltiptext {
+  display: none;
+  width: 50px;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0px;
+  padding-right: 18px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: -8px;
+}
+
+.rootFlexHeading {
+  padding: 20px;
+  max-width: 300px;
+  color: #333;
+  font-size: 14px;
+  margin: auto;
+}
+
+.social_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100px;
+}
+
+.social_icons i {
+  color: #333 !important;
+  font-size: 20px;
+  margin: 6px 0px;
+  transition-duration: 0.5s;
+}
+
+@media (hover: hover) {
+  .value:hover,
+  .itemOperations:hover {
+    background-color: #ffa50022;
+  }
+  .copyIcon:hover .tooltiptext {
+    display: block;
+  }
+  .copyIcon:hover {
+    color: #fff;
+  }
+  .social_icons i:hover {
+    color: #ffa500 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .attributesContainer {
+    flex-direction: column;
+  }
+  .otherSection {
+    flex-direction: column;
+  }
+  .containerSection {
+    flex-direction: column-reverse;
+    height: unset;
+    max-height: unset;
+  }
+  .rootFlexCode {
+    padding: 20px 40px;
+    min-width: 240px;
+  }
+  .rootFlexHeading {
+    padding: 20px 40px;
+    padding-top: 40px;
+    min-width: 240px;
+  }
+  .hoverStyle {
+    width: 100%;
+    min-height: 250px;
+    height: 250px;
+  }
+  .itemOperationsContainer {
+    flex: 1;
+    width: unset;
+  }
+  .copyIcon {
+    color: #fff;
+  }
+}
